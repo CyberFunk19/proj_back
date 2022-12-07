@@ -22,7 +22,7 @@ class Students(db.Model):
         self.city = city
 # model
 
-@app.route('/students/', methods = ['GET', 'POST','DELETE'])
+@app.route('/students/', methods = ['GET', 'POST','DELETE','PUT'])
 @app.route('/students/<id>', methods = ['GET', 'POST','DELETE','PUT'])
 def crude_students(id=-1):
     if request.method == 'POST':
